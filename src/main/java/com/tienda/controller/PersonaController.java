@@ -26,7 +26,7 @@ public class PersonaController {
     List<Persona> listaPersona = personaService.getAllPersona();
     model.addAttribute("titulo","Tabla Persona");
     model.addAttribute("persona",listaPersona);
-    return "personas";
+    return "persona";
     }
     @GetMapping("/personaN")
     public String crearPersona(Model model){
